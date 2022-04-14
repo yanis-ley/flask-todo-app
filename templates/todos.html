@@ -1,0 +1,24 @@
+{% extends 'layout.html'%}
+
+{% block head %} 
+<title>Todo App</title>
+{% endblock %}
+
+{%block body %}
+    <div class="first-div"></div>
+    <div class="second-div">
+        <h1 class="headline">Simple Todo App</h1>
+        <hr>
+        <form action="/todos", method="POST">
+            <input class="input-field" placeholder="Type in your task..." name="title" id="name">
+            <input class="submit-button" type="submit" value="Add to list">
+        </form>
+        {%for todo in todos %}
+            <div class="todo-div">
+                <span class="todo-headline">{{todo.title}}</span>
+                <a class="link" href="/delete/{{todo.id}}" ><button class="done-button">Done</button></a>
+            </div>  
+        {% endfor %}
+    </div>
+    <div class="third-div"></div>
+{% endblock %}

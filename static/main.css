@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+body, html{
+   padding: 0;
+   margin: 0;
+   height: 100%;
+   width: 100%;
+}
+
+::selection{
+    color: rgb(255, 255, 255);
+    background: #4e557c; 
+  }
+
+:focus{
+    outline: none;
+}
+
+.first-div{
+    float: left;
+    width: 37.5%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+
+.second-div{
+    float:left;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.third-div{
+    float: right;
+    width: 37.5%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+
+
+.headline{
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #017f6c	
+}
+
+.input-field{
+    width: 57%;
+    height:36px;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-width: 1px;
+    font-family: 'Sora', sans-serif;
+}
+
+
+.submit-button{
+    width: 40%;
+    height: 40px;
+    font-size: large;
+    color: white;
+    background-color: #037d50;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Sora', sans-serif;
+
+}
+
+.todo-div{
+    margin-top: 50px;
+    background-color: #ffffff;
+    height: auto;
+    width: 100%;
+    border-width: 2px;
+}
+
+.todo-headline{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+}
+
+.link  {
+    text-decoration: none;
+}
+
+.done-button{
+    background-color: #037d50;
+    color: rgb(251, 251, 251);
+    font-family: 'Sora', sans-serif;
+    float: right;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+}
+
